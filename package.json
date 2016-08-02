@@ -1,0 +1,35 @@
+{
+  "name": "avvalmarket-plugin-payment-iap",
+  "version": "1.2",
+  "description": "Avval Market IAP plugin",
+  "cordova": {
+    "id": "avvalmarket-plugin-payment-iap",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladesign/avvalmarket-plugin-payment-iap.git"
+  },
+  "keywords": [
+    "avvalmarket",
+    "plugin",
+    "payment",
+    "IAP",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Milad Mohammadi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miladesign/avvalmarket-plugin-payment-iap/issues"
+  },
+  "homepage": "https://github.com/miladesign/avvalmarket-plugin-payment-iap#readme"
+}

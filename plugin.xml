@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="avvalmarket-plugin-payment-iap"
+    version="1.2">
+
+	<name>Avval Market IAP plugin</name>
+    <description>Avval Market IAP plugin</description>
+    <author>Milad Mohammadi Rezagah</author>		
+    <license>MIT</license>
+    <keywords>cordova,plugin,payment,IAP</keywords>
+    <repo>https://github.com/miladesign/avvalmarket-plugin-payment-iap</repo>
+    <issue>https://github.com/miladesign/avvalmarket-plugin-payment-iap/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/iap.js" name="iap">
+        <clobbers target="window.iap" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="IAP" >
+				<param name="android-package" value="ir.avvalmarket.miladesign.IAP"/>
+			</feature>
+	    </config-file>
+	    
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="com.hrm.android.market.permission.PAY_THROUGH_MARKET" />
+        </config-file>		
+		
+	    <source-file src="src/android/AvvalMarketIAP.jar" target-dir="libs"/>
+    </platform>
+
+</plugin>
